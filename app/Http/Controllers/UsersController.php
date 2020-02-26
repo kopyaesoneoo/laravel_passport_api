@@ -56,9 +56,6 @@ class UsersController extends Controller
           'user' => $user
       ]);
     }
-    function test(){
-//dd('hello');
-    }
 
     public function logout(Request $res)
     {
