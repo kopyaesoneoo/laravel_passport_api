@@ -20,8 +20,8 @@ class UsersController extends Controller
               'token' => $success,
               'user' => $user
           ]);
-        } else {
-          //hellos
+        } else{
+          //s
        //if authentication is unsuccessfull, notice how I return json parameters
           return response()->json([
             'success' => false,
@@ -55,6 +55,9 @@ class UsersController extends Controller
           'token' => $success,
           'user' => $user
       ]);
+    }
+    function test(){
+//dd('hello');
     }
 
     public function logout(Request $res)
